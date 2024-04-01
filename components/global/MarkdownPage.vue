@@ -191,9 +191,9 @@
                 >
                   <nu-icon name="chevron-left" />
                   <nu-flow text="right">
-                    <nu-block text="ellipsis">{{
-                      previousPage.menuTitle
-                    }}</nu-block>
+                    <nu-block text="ellipsis"
+                      >{{ previousPage.menuTitle }}
+                    </nu-block>
                     <nu-block size="sm xs" text="b ellipsis">
                       {{
                         previousPage.sectionTitle
@@ -215,9 +215,9 @@
                   order="2|||||1"
                 >
                   <nu-flow text="left">
-                    <nu-block text="ellipsis">{{
-                      nextPage.menuTitle
-                    }}</nu-block>
+                    <nu-block text="ellipsis"
+                      >{{ nextPage.menuTitle }}
+                    </nu-block>
                     <nu-block size="sm xs" text="b ellipsis">
                       {{
                         nextPage.sectionTitle
@@ -289,7 +289,7 @@
         </nu-pane>
       </nu-block>
     </nu-block>
-    
+
     <PreviewWindow />
   </nu-flow>
 </template>
@@ -460,6 +460,7 @@ export default {
 .nuxt-content > *:not(:last-child) {
   margin-bottom: calc(var(--gap) * 2);
 }
+
 .nuxt-content-container > textarea {
   color: var(--text-color);
   background-color: var(--bg-color);

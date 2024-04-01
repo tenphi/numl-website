@@ -56,7 +56,7 @@
             height="100%"
             fit="cover"
             place="cover"
-            src="https://d13k13wj6adfdf.cloudfront.net/urban_areas/san-francisco-bay-area_web-f17b1f60e6.jpg"
+            src="/san-francisco-bay-area.jpeg"
           />
           <nu-badge
             place="left bottom 2x"
