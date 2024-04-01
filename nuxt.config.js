@@ -5,7 +5,7 @@ import { SECTION_MAP } from './helpers/config';
 const DEV = process.env.NODE_ENV !== 'production';
 
 export default {
-  base: '/numl/',
+  base: '/numl-website/',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
