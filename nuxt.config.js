@@ -165,9 +165,6 @@ export default {
         '/api': { target: 'http://localhost:3030', ws: false },
       }
     : {},
-  router: {
-    base: '/numl-website/',
-  },
   generate: {
     crawler: true,
     routes() {
