@@ -5,7 +5,6 @@ import { SECTION_MAP } from './helpers/config';
 const DEV = process.env.NODE_ENV !== 'production';
 
 export default {
-  base: '/numl-website/',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -166,6 +165,9 @@ export default {
         '/api': { target: 'http://localhost:3030', ws: false },
       }
     : {},
+  router: {
+    base: '/numl-website/',
+  },
   generate: {
     crawler: true,
     routes() {
