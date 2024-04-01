@@ -1,0 +1,527 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-nu-icons="ion" data-nu-scrollbar="" data-nu-prevent="" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22data-nu-icons%22:%7B%22ssr%22:%22ion%22%7D,%22data-nu-scrollbar%22:%7B%22ssr%22:%22%22%7D,%22data-nu-prevent%22:%7B%22ssr%22:%22%22%7D%7D">
+  <head>
+    <title>control – Reference – Numl.Design</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#444"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" property="og:site_name" content="Numl.Design – Atomic UI Web Framework"><meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="control – Reference – Numl.Design"><meta data-n-head="ssr" data-hid="og:title" name="og:title" content="control – Reference – Numl.Design"><meta data-n-head="ssr" data-hid="description" name="description" content='Description and usage examples of "control" behavior.'><meta data-n-head="ssr" data-hid="og:description" name="og:description" content='Description and usage examples of "control" behavior.'><link data-n-head="ssr" rel="icon" type="image/png" media="(prefers-color-scheme:light)" sizes="32x32" href="/nude-logo-32.png"><link data-n-head="ssr" rel="icon" type="image/png" media="(prefers-color-scheme:light)" sizes="16x16" href="/nude-logo-16.png"><link data-n-head="ssr" rel="icon" type="image/png" media="(prefers-color-scheme:dark)" sizes="32x32" href="/nude-logo-32-dark.png"><link data-n-head="ssr" rel="icon" type="image/png" media="(prefers-color-scheme:dark)" sizes="16x16" href="/nude-logo-16-dark.png"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Mono&display=swap"><link data-n-head="ssr" rel="stylesheet" href="/docsearch.css"><link data-n-head="ssr" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.0160f9.png"><link data-n-head="ssr" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.0160f9.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f221cef6.json" data-hid="manifest"><script data-n-head="ssr" src="https://cdn.jsdelivr.net/npm/numl@^1.1.2/dist/index.js" type="module"></script><link rel="preload" href="/_nuxt/2d0c8cb.js" as="script"><link rel="preload" href="/_nuxt/a65c8b7.js" as="script"><link rel="preload" href="/_nuxt/cebb070.js" as="script"><link rel="preload" href="/_nuxt/faaf8e3.js" as="script"><link rel="preload" href="/_nuxt/893ade6.js" as="script"><link rel="preload" href="/_nuxt/d3b510d.js" as="script"><style data-vue-ssr-id="1dfbd988:0 3000a27e:0 da619ecc:0 72cae6af:0 517a8dd7:0 fa7ff0ca:0 77e78d12:0">:not(:defined){visibility:hidden}.CodeMirror{font-family:monospace;height:300px;color:#000;direction:ltr}.CodeMirror-lines{padding:4px 0}.CodeMirror pre.CodeMirror-line,.CodeMirror pre.CodeMirror-line-like{padding:0 4px}.CodeMirror-gutter-filler,.CodeMirror-scrollbar-filler{background-color:#fff}.CodeMirror-gutters{border-right:1px solid #ddd;background-color:#f7f7f7;white-space:nowrap}.CodeMirror-linenumber{padding:0 3px 0 5px;min-width:20px;text-align:right;color:#999;white-space:nowrap}.CodeMirror-guttermarker{color:#000}.CodeMirror-guttermarker-subtle{color:#999}.CodeMirror-cursor{border-left:1px solid #000;border-right:none;width:0}.CodeMirror div.CodeMirror-secondarycursor{border-left:1px solid silver}.cm-fat-cursor .CodeMirror-cursor{width:auto;border:0!important;background:#7e7}.cm-fat-cursor div.CodeMirror-cursors{z-index:1}.cm-fat-cursor-mark{background-color:rgba(20,255,20,.5)}.cm-animate-fat-cursor,.cm-fat-cursor-mark{-webkit-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite}.cm-animate-fat-cursor{width:auto;border:0;background-color:#7e7}@-webkit-keyframes blink{50%{background-color:transparent}}@keyframes blink{50%{background-color:transparent}}.cm-tab{display:inline-block;text-decoration:inherit}.CodeMirror-rulers{position:absolute;left:0;right:0;top:-50px;bottom:0;overflow:hidden}.CodeMirror-ruler{border-left:1px solid #ccc;top:0;bottom:0;position:absolute}.cm-s-default .cm-header{color:#00f}.cm-s-default .cm-quote{color:#090}.cm-negative{color:#d44}.cm-positive{color:#292}.cm-header,.cm-strong{font-weight:700}.cm-em{font-style:italic}.cm-link{text-decoration:underline}.cm-strikethrough{text-decoration:line-through}.cm-s-default .cm-keyword{color:#708}.cm-s-default .cm-atom{color:#219}.cm-s-default .cm-number{color:#164}.cm-s-default .cm-def{color:#00f}.cm-s-default .cm-variable-2{color:#05a}.cm-s-default .cm-type,.cm-s-default .cm-variable-3{color:#085}.cm-s-default .cm-comment{color:#a50}.cm-s-default .cm-string{color:#a11}.cm-s-default .cm-string-2{color:#f50}.cm-s-default .cm-meta,.cm-s-default .cm-qualifier{color:#555}.cm-s-default .cm-builtin{color:#30a}.cm-s-default .cm-bracket{color:#997}.cm-s-default .cm-tag{color:#170}.cm-s-default .cm-attribute{color:#00c}.cm-s-default .cm-hr{color:#999}.cm-s-default .cm-link{color:#00c}.cm-invalidchar,.cm-s-default .cm-error{color:red}.CodeMirror-composing{border-bottom:2px solid}div.CodeMirror span.CodeMirror-matchingbracket{color:#0b0}div.CodeMirror span.CodeMirror-nonmatchingbracket{color:#a22}.CodeMirror-matchingtag{background:rgba(255,150,0,.3)}.CodeMirror-activeline-background{background:#e8f2ff}.CodeMirror{position:relative;overflow:hidden;background:#fff}.CodeMirror-scroll{overflow:scroll!important;margin-bottom:-50px;margin-right:-50px;padding-bottom:50px;height:100%;outline:0;position:relative}.CodeMirror-sizer{position:relative;border-right:50px solid transparent}.CodeMirror-gutter-filler,.CodeMirror-hscrollbar,.CodeMirror-scrollbar-filler,.CodeMirror-vscrollbar{position:absolute;z-index:6;display:none;outline:0}.CodeMirror-vscrollbar{right:0;top:0;overflow-x:hidden;overflow-y:scroll}.CodeMirror-hscrollbar{bottom:0;left:0;overflow-y:hidden;overflow-x:scroll}.CodeMirror-scrollbar-filler{right:0;bottom:0}.CodeMirror-gutter-filler{left:0;bottom:0}.CodeMirror-gutters{position:absolute;left:0;top:0;min-height:100%;z-index:3}.CodeMirror-gutter{white-space:normal;height:100%;display:inline-block;vertical-align:top;margin-bottom:-50px}.CodeMirror-gutter-wrapper{position:absolute;z-index:4;background:0 0!important;border:none!important}.CodeMirror-gutter-background{position:absolute;top:0;bottom:0;z-index:4}.CodeMirror-gutter-elt{position:absolute;cursor:default;z-index:4}.CodeMirror-gutter-wrapper ::selection{background-color:transparent}.CodeMirror-gutter-wrapper ::-moz-selection{background-color:transparent}.CodeMirror-lines{cursor:text;min-height:1px}.CodeMirror pre.CodeMirror-line,.CodeMirror pre.CodeMirror-line-like{border-radius:0;border-width:0;background:0 0;font-family:inherit;font-size:inherit;margin:0;white-space:pre;word-wrap:normal;line-height:inherit;color:inherit;z-index:2;position:relative;overflow:visible;-webkit-tap-highlight-color:transparent;-webkit-font-variant-ligatures:contextual;font-feature-settings:"calt";font-variant-ligatures:contextual}.CodeMirror-wrap pre.CodeMirror-line,.CodeMirror-wrap pre.CodeMirror-line-like{word-wrap:break-word;white-space:pre-wrap;word-break:normal}.CodeMirror-linebackground{position:absolute;left:0;right:0;top:0;bottom:0;z-index:0}.CodeMirror-linewidget{position:relative;z-index:2;padding:.1px}.CodeMirror-rtl pre{direction:rtl}.CodeMirror-code{outline:0}.CodeMirror-gutter,.CodeMirror-gutters,.CodeMirror-linenumber,.CodeMirror-scroll,.CodeMirror-sizer{box-sizing:content-box}.CodeMirror-measure{position:absolute;width:100%;height:0;overflow:hidden;visibility:hidden}.CodeMirror-cursor{position:absolute;pointer-events:none}.CodeMirror-measure pre{position:static}div.CodeMirror-cursors{visibility:hidden;position:relative;z-index:3}.CodeMirror-focused div.CodeMirror-cursors,div.CodeMirror-dragcursors{visibility:visible}.CodeMirror-selected{background:#d9d9d9}.CodeMirror-focused .CodeMirror-selected{background:#d7d4f0}.CodeMirror-crosshair{cursor:crosshair}.CodeMirror-line::selection,.CodeMirror-line>span::selection,.CodeMirror-line>span>span::selection{background:#d7d4f0}.CodeMirror-line::-moz-selection,.CodeMirror-line>span::-moz-selection,.CodeMirror-line>span>span::-moz-selection{background:#d7d4f0}.cm-searching{background-color:#ffa;background-color:rgba(255,255,0,.4)}.cm-force-border{padding-right:.1px}@media print{.CodeMirror div.CodeMirror-cursors{visibility:hidden}}.cm-tab-wrap-hack:after{content:""}span.CodeMirror-selectedtext{background:0 0}.cm-s-cobalt.CodeMirror{background:#002240;color:#fff}.cm-s-cobalt div.CodeMirror-selected{background:#b36539}.cm-s-cobalt .CodeMirror-line::selection,.cm-s-cobalt .CodeMirror-line>span::selection,.cm-s-cobalt .CodeMirror-line>span>span::selection{background:rgba(179,101,57,.99)}.cm-s-cobalt .CodeMirror-line::-moz-selection,.cm-s-cobalt .CodeMirror-line>span::-moz-selection,.cm-s-cobalt .CodeMirror-line>span>span::-moz-selection{background:rgba(179,101,57,.99)}.cm-s-cobalt .CodeMirror-gutters{background:#002240;border-right:1px solid #aaa}.cm-s-cobalt .CodeMirror-guttermarker{color:#ffee80}.cm-s-cobalt .CodeMirror-guttermarker-subtle,.cm-s-cobalt .CodeMirror-linenumber{color:#d0d0d0}.cm-s-cobalt .CodeMirror-cursor{border-left:1px solid #fff}.cm-s-cobalt span.cm-comment{color:#08f}.cm-s-cobalt span.cm-atom{color:#845dc4}.cm-s-cobalt span.cm-attribute,.cm-s-cobalt span.cm-number{color:#ff80e1}.cm-s-cobalt span.cm-keyword{color:#ffee80}.cm-s-cobalt span.cm-string{color:#3ad900}.cm-s-cobalt span.cm-meta{color:#ff9d00}.cm-s-cobalt span.cm-tag,.cm-s-cobalt span.cm-variable-2{color:#9effff}.cm-s-cobalt .cm-type,.cm-s-cobalt span.cm-def,.cm-s-cobalt span.cm-variable-3{color:#fff}.cm-s-cobalt span.cm-bracket{color:#d8d8d8}.cm-s-cobalt span.cm-builtin,.cm-s-cobalt span.cm-special{color:#ff9e59}.cm-s-cobalt span.cm-link{color:#845dc4}.cm-s-cobalt span.cm-error{color:#9d1e15}.cm-s-cobalt .CodeMirror-activeline-background{background:#002d57}.cm-s-cobalt .CodeMirror-matchingbracket{outline:1px solid grey;color:#fff!important}.CodeMirror-hints{position:absolute;z-index:10;overflow:hidden;list-style:none;margin:0;padding:2px;box-shadow:2px 3px 5px rgba(0,0,0,.2);border-radius:3px;border:1px solid silver;background:#fff;font-size:90%;font-family:monospace;max-height:20em;overflow-y:auto}.CodeMirror-hint{margin:0;padding:0 4px;border-radius:2px;white-space:pre;color:#000;cursor:pointer}li.CodeMirror-hint-active{background:#08f;color:#fff}code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}.nuxt-content>:not(:last-child){margin-bottom:calc(var(--gap)*2)}.nuxt-content-container>textarea{color:var(--text-color);background-color:var(--bg-color);padding:var(--gap) calc(var(--gap)*2);border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);font-size:17px;line-height:27px;font-family:"Roboto Mono",monospace;font-weight:500}</style><link rel="preload" href="/_nuxt/static/1711978526/reference/behaviors/control/state.js" as="script"><link rel="preload" href="/_nuxt/static/1711978526/reference/behaviors/control/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1711978526/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><nu-root id="root" responsive="100rem|90rem|65rem|40rem|30rem" height="min 100vh" box="n"><nu-theme id="main-theme" hue="290" saturation="75"></nu-theme> <nu-theme name="secondary" hue="240" saturation="75"></nu-theme> <nu-props bg-color="#secondary-bg" text-color="#secondary-text" text-soft-color="#secondary-text-soft" text-strong-color="#secondary-text-strong" subtle-color="#secondary-subtle" shadow-color="#secondary-shadow" border-color="#secondary-border" input-color="#secondary-input" page-bg-color="^root #bg :dark[#subtle]" second-bg-color="^root #subtle :dark[#bg]" diff-color="#second-bg" topbar-offset="8.75x|||6.75x" sidebar-width="32x||26x" max-content-width="100rem - (@content-padding * 2)" grid-gap="3x" content-padding="6x||3x|6x|3x" column-number="12||||2" column-width="((@max-content-width - (@grid-gap * 11)) / 12)|((100vw - (@content-padding * 2) - (@grid-gap * (@column-number - 1))) / @column-number)" content-width="12sp||||2sp"></nu-props> <nu-block border="bottom" padding="1.5x 0|||.5x 0" place="fixed top" width="100vw" z="10001" fill="#page-bg"><nu-props grid-gap="8x||4x"></nu-props> <nu-pane gap="1gp" width="@content-width" space="around" content="space-between"><nu-block id="logo"><nu-pane text="nowrap" width="@sidebar-width" gap="1x"><nu-btn clear="" color="text :hover.focus[special]" padding="0" to="/"><nu-svg src="/images/nude-logo-small.svg" height="4x" width="min 4x" color="text-soft"></nu-svg></nu-btn> <nu-h2 size="xl">
+            Numl<nu-btn padding="1x right" clear="" value="reference"><nu-el>.<nu-value list="">Storybook</nu-value></nu-el> <nu-dropdownicon></nu-dropdownicon> <nu-popuplistbox size="md" text="heading" gap="0" place="top -1x"><nu-option value="storybook">Storybook</nu-option> <nu-option value="handbook">Handbook</nu-option> <nu-option value="reference">Reference</nu-option> <nu-option value="repl">REPL</nu-option></nu-popuplistbox></nu-btn></nu-h2></nu-pane></nu-block> <nu-block grow="1" show="y|||n"><nu-block box="y"><nu-inputgroup radius="" fill="^root #subtle :dark[#input]" border="hidden :hover[#special.50]" transition="all" use-hover=""><nu-icon name="search" opacity=".5" padding="0 1x"></nu-icon> <nu-search grow="1" fill="#clear" placeholder="Search (Press '/' to focus)" use-hotkey="/" value=""><input id="docsearch" autocorrect="off" autocomplete="off" autocapitalize="none" spellcheck="false"></nu-search></nu-inputgroup></nu-block></nu-block> <nu-pane content="space-between" width="@sidebar-width|||auto" size="lg" gap="1x"><nu-block size="lg||sm" show="y|||n">
+          
+        </nu-block> <nu-pane gap="0"><nu-attrs for="btn" color="text :hover[special]"></nu-attrs> <nu-btn toggle="" padding="" clear="" color="special" use-hotkey="s"><nu-icon name="color-palette-outline"></nu-icon></nu-btn> <nu-btn show="y|||n" to="!https://github.com/numldesign/numl" padding="" clear="" use-hotkey="g"><nu-icon name="github-outline"></nu-icon></nu-btn> <nu-btn toggle="" inset="n" show="n|||y" clear="" padding="" color="text :hover[special]"><nu-icon name="^ menu-outline :pressed[close]"></nu-icon></nu-btn></nu-pane></nu-pane></nu-pane></nu-block> <nu-flow fill="#page-bg"><nu-props main-width="--content-width - 2gp - (2 * --sidebar-width)" grid-gap="8x||4x" transition="120ms"></nu-props> <nu-attrs for="list" position="inside"></nu-attrs> <nu-attrs for="cd" fill="^root diff :dark[#dark]" shadow=".5"></nu-attrs> <nu-attrs for="code" size="md"></nu-attrs> <nu-spacer height="--topbar-offset"></nu-spacer> <nu-grid space="around" width="--content-width" columns="--sidebar-width 1fr|||1fr" gap="1gp" height="min 100vh"><nu-block fill="#page-bg" place="static|||fixed top --topbar-offset" width="auto|||100%" height="auto|||stretch" z="no|||10000" show="y|||n"><nu-block show="n|||y" space="around" width="--content-width" padding="2x 0"><nu-block box="y" section="reference"><nu-inputgroup radius="" fill="^root #subtle :dark[#input]" border="hidden :hover[#special.50]" transition="all" use-hover=""><nu-icon name="search" opacity=".5" padding="0 1x"></nu-icon> <nu-search grow="1" fill="#clear" placeholder="Search" value=""><input id="docsearch-sidebar" autocorrect="off" autocomplete="off" autocapitalize="none" spellcheck="false"></nu-search></nu-inputgroup></nu-block></nu-block> <nu-nav label="Main" display="flex" flow="column" items="stretch" gap="0" place="sticky top --topbar-offset" overflow="hidden auto" height="max (100vh - --topbar-offset)|||max (100vh - --topbar-offset - 9x)" padding="4x 1x 4x 0|||0 1cp 4x" space="1x left"><nu-h2 show="n|||y" size="sm" text="up b" color="#text.60" padding="0 0 1x 1x">
+          Pages
+        </nu-h2> <nu-btn to="/reference" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1" use-current="">
+            Introduction
+          </nu-btn> <nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Definitions
+          </nu-h2> <nu-btn to="/reference/definitions/nu-attrs" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-attrs/>
+            </nu-btn><nu-btn to="/reference/definitions/nu-base" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-base/>
+            </nu-btn><nu-btn to="/reference/definitions/nu-props" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-props/>
+            </nu-btn><nu-btn to="/reference/definitions/nu-theme" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-theme/>
+            </nu-btn><nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Elements
+          </nu-h2> <nu-btn to="/reference/elements/nu-action" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-action/>
+            </nu-btn><nu-btn to="/reference/elements/nu-article" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-article/>
+            </nu-btn><nu-btn to="/reference/elements/nu-aside" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-aside/>
+            </nu-btn><nu-btn to="/reference/elements/nu-badge" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-badge/>
+            </nu-btn><nu-btn to="/reference/elements/nu-block" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-block/>
+            </nu-btn><nu-btn to="/reference/elements/nu-blocklink" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-blocklink/>
+            </nu-btn><nu-btn to="/reference/elements/nu-blockquote" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-blockquote/>
+            </nu-btn><nu-btn to="/reference/elements/nu-btn" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-btn/>
+            </nu-btn><nu-btn to="/reference/elements/nu-btngroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-btngroup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-card" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-card/>
+            </nu-btn><nu-btn to="/reference/elements/nu-cardbtn" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-cardbtn/>
+            </nu-btn><nu-btn to="/reference/elements/nu-cd" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-cd/>
+            </nu-btn><nu-btn to="/reference/elements/nu-cell" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-cell/>
+            </nu-btn><nu-btn to="/reference/elements/nu-check" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-check/>
+            </nu-btn><nu-btn to="/reference/elements/nu-checkbox" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-checkbox/>
+            </nu-btn><nu-btn to="/reference/elements/nu-circle" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-circle/>
+            </nu-btn><nu-btn to="/reference/elements/nu-code" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-code/>
+            </nu-btn><nu-btn to="/reference/elements/nu-columnheader" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-columnheader/>
+            </nu-btn><nu-btn to="/reference/elements/nu-contents" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-contents/>
+            </nu-btn><nu-btn to="/reference/elements/nu-dateinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-dateinput/>
+            </nu-btn><nu-btn to="/reference/elements/nu-datepicker" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-datepicker/>
+            </nu-btn><nu-btn to="/reference/elements/nu-datetime" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-datetime/>
+            </nu-btn><!----><nu-btn to="/reference/elements/nu-description" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-description/>
+            </nu-btn><nu-btn to="/reference/elements/nu-dropdownicon" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-dropdownicon/>
+            </nu-btn><nu-btn to="/reference/elements/nu-el" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-el/>
+            </nu-btn><nu-btn to="/reference/elements/nu-em" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-em/>
+            </nu-btn><nu-btn to="/reference/elements/nu-emailinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-emailinput/>
+            </nu-btn><nu-btn to="/reference/elements/nu-field" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-field/>
+            </nu-btn><nu-btn to="/reference/elements/nu-fileinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-fileinput/>
+            </nu-btn><nu-btn to="/reference/elements/nu-flex" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-flex/>
+            </nu-btn><nu-btn to="/reference/elements/nu-flow" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-flow/>
+            </nu-btn><nu-btn to="/reference/elements/nu-footer" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-footer/>
+            </nu-btn><nu-btn to="/reference/elements/nu-form" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-form/>
+            </nu-btn><nu-btn to="/reference/elements/nu-grid" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-grid/>
+            </nu-btn><nu-btn to="/reference/elements/nu-gridtable" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-gridtable/>
+            </nu-btn><nu-btn to="/reference/elements/nu-group" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-group/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h1" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h1/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h2" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h2/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h3" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h3/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h4" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h4/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h5" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h5/>
+            </nu-btn><nu-btn to="/reference/elements/nu-h6" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-h6/>
+            </nu-btn><nu-btn to="/reference/elements/nu-header" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-header/>
+            </nu-btn><nu-btn to="/reference/elements/nu-heading" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-heading/>
+            </nu-btn><nu-btn to="/reference/elements/nu-icon" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-icon/>
+            </nu-btn><nu-btn to="/reference/elements/nu-img" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-img/>
+            </nu-btn><nu-btn to="/reference/elements/nu-in" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-in/>
+            </nu-btn><nu-btn to="/reference/elements/nu-input" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-input/>
+            </nu-btn><nu-btn to="/reference/elements/nu-inputgroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-inputgroup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-itembtn" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-itembtn/>
+            </nu-btn><nu-btn to="/reference/elements/nu-label" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-label/>
+            </nu-btn><nu-btn to="/reference/elements/nu-line" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-line/>
+            </nu-btn><nu-btn to="/reference/elements/nu-link" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-link/>
+            </nu-btn><nu-btn to="/reference/elements/nu-list" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-list/>
+            </nu-btn><nu-btn to="/reference/elements/nu-listbox" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-listbox/>
+            </nu-btn><nu-btn to="/reference/elements/nu-listitem" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-listitem/>
+            </nu-btn><nu-btn to="/reference/elements/nu-main" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-main/>
+            </nu-btn><nu-btn to="/reference/elements/nu-mark" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-mark/>
+            </nu-btn><nu-btn to="/reference/elements/nu-markdown" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-markdown/>
+            </nu-btn><nu-btn to="/reference/elements/nu-md" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-md/>
+            </nu-btn><nu-btn to="/reference/elements/nu-menu" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-menu/>
+            </nu-btn><nu-btn to="/reference/elements/nu-menuitem" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-menuitem/>
+            </nu-btn><nu-btn to="/reference/elements/nu-nav" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-nav/>
+            </nu-btn><nu-btn to="/reference/elements/nu-num" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-num/>
+            </nu-btn><nu-btn to="/reference/elements/nu-numinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-numinput/>
+            </nu-btn><nu-btn to="/reference/elements/nu-onetimecode" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-onetimecode/>
+            </nu-btn><nu-btn to="/reference/elements/nu-option" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-option/>
+            </nu-btn><nu-btn to="/reference/elements/nu-pane" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-pane/>
+            </nu-btn><nu-btn to="/reference/elements/nu-password" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-password/>
+            </nu-btn><nu-btn to="/reference/elements/nu-ph" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-ph/>
+            </nu-btn><nu-btn to="/reference/elements/nu-popup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-popup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-popuplistbox" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-popuplistbox/>
+            </nu-btn><nu-btn to="/reference/elements/nu-progressbar" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-progressbar/>
+            </nu-btn><nu-btn to="/reference/elements/nu-radio" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-radio/>
+            </nu-btn><nu-btn to="/reference/elements/nu-radiogroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-radiogroup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-region" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-region/>
+            </nu-btn><nu-btn to="/reference/elements/nu-root" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-root/>
+            </nu-btn><nu-btn to="/reference/elements/nu-row" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-row/>
+            </nu-btn><nu-btn to="/reference/elements/nu-rowgroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-rowgroup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-rowheader" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-rowheader/>
+            </nu-btn><nu-btn to="/reference/elements/nu-search" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-search/>
+            </nu-btn><nu-btn to="/reference/elements/nu-section" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-section/>
+            </nu-btn><nu-btn to="/reference/elements/nu-slider" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-slider/>
+            </nu-btn><nu-btn to="/reference/elements/nu-slider2d" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-slider2d/>
+            </nu-btn><nu-btn to="/reference/elements/nu-spacer" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-spacer/>
+            </nu-btn><nu-btn to="/reference/elements/nu-special" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-special/>
+            </nu-btn><nu-btn to="/reference/elements/nu-spin" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-spin/>
+            </nu-btn><nu-btn to="/reference/elements/nu-status" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-status/>
+            </nu-btn><nu-btn to="/reference/elements/nu-strong" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-strong/>
+            </nu-btn><nu-btn to="/reference/elements/nu-sub" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-sub/>
+            </nu-btn><nu-btn to="/reference/elements/nu-sup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-sup/>
+            </nu-btn><nu-btn to="/reference/elements/nu-svg" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-svg/>
+            </nu-btn><nu-btn to="/reference/elements/nu-switch" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-switch/>
+            </nu-btn><nu-btn to="/reference/elements/nu-tab" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-tab/>
+            </nu-btn><nu-btn to="/reference/elements/nu-table" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-table/>
+            </nu-btn><nu-btn to="/reference/elements/nu-tableheader" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-tableheader/>
+            </nu-btn><nu-btn to="/reference/elements/nu-tablist" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-tablist/>
+            </nu-btn><nu-btn to="/reference/elements/nu-telinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-telinput/>
+            </nu-btn><nu-btn to="/reference/elements/nu-textarea" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-textarea/>
+            </nu-btn><nu-btn to="/reference/elements/nu-tooltip" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-tooltip/>
+            </nu-btn><nu-btn to="/reference/elements/nu-triangle" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-triangle/>
+            </nu-btn><nu-btn to="/reference/elements/nu-value" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              &lt;nu-value/>
+            </nu-btn><nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Behaviors
+          </nu-h2> <nu-btn to="/reference/behaviors/action" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              action
+            </nu-btn><nu-btn to="/reference/behaviors/active" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              active
+            </nu-btn><nu-btn to="/reference/behaviors/appear" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              appear
+            </nu-btn><nu-btn to="/reference/behaviors/code" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              code
+            </nu-btn><nu-btn to="/reference/behaviors/control" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              control
+            </nu-btn><nu-btn to="/reference/behaviors/current" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              current
+            </nu-btn><nu-btn to="/reference/behaviors/dateinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              dateinput
+            </nu-btn><nu-btn to="/reference/behaviors/datepicker" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              datepicker
+            </nu-btn><nu-btn to="/reference/behaviors/datetime" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              datetime
+            </nu-btn><nu-btn to="/reference/behaviors/debug" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              debug
+            </nu-btn><nu-btn to="/reference/behaviors/debugger" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              debugger
+            </nu-btn><nu-btn to="/reference/behaviors/fileinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              fileinput
+            </nu-btn><nu-btn to="/reference/behaviors/fixate" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              fixate
+            </nu-btn><nu-btn to="/reference/behaviors/focus" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              focus
+            </nu-btn><nu-btn to="/reference/behaviors/form" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              form
+            </nu-btn><nu-btn to="/reference/behaviors/group" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              group
+            </nu-btn><nu-btn to="/reference/behaviors/hotkey" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              hotkey
+            </nu-btn><nu-btn to="/reference/behaviors/hover" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              hover
+            </nu-btn><nu-btn to="/reference/behaviors/icon" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              icon
+            </nu-btn><nu-btn to="/reference/behaviors/image" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              image
+            </nu-btn><nu-btn to="/reference/behaviors/input" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              input
+            </nu-btn><nu-btn to="/reference/behaviors/inputgroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              inputgroup
+            </nu-btn><nu-btn to="/reference/behaviors/label" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              label
+            </nu-btn><nu-btn to="/reference/behaviors/listbox" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              listbox
+            </nu-btn><nu-btn to="/reference/behaviors/markdown" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              markdown
+            </nu-btn><nu-btn to="/reference/behaviors/menu" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              menu
+            </nu-btn><nu-btn to="/reference/behaviors/menuitem" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              menuitem
+            </nu-btn><nu-btn to="/reference/behaviors/movable" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              movable
+            </nu-btn><nu-btn to="/reference/behaviors/number" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              number
+            </nu-btn><nu-btn to="/reference/behaviors/numinput" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              numinput
+            </nu-btn><nu-btn to="/reference/behaviors/offset" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              offset
+            </nu-btn><nu-btn to="/reference/behaviors/option" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              option
+            </nu-btn><nu-btn to="/reference/behaviors/orient" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              orient
+            </nu-btn><nu-btn to="/reference/behaviors/popup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              popup
+            </nu-btn><nu-btn to="/reference/behaviors/progressbar" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              progressbar
+            </nu-btn><nu-btn to="/reference/behaviors/radiogroup" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              radiogroup
+            </nu-btn><nu-btn to="/reference/behaviors/slider" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              slider
+            </nu-btn><nu-btn to="/reference/behaviors/slider2d" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              slider2d
+            </nu-btn><nu-btn to="/reference/behaviors/svg" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              svg
+            </nu-btn><nu-btn to="/reference/behaviors/textarea" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              textarea
+            </nu-btn><nu-btn to="/reference/behaviors/tooltip" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              tooltip
+            </nu-btn><nu-btn to="/reference/behaviors/validator" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              validator
+            </nu-btn><nu-btn to="/reference/behaviors/value" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              value
+            </nu-btn><nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Style attributes
+          </nu-h2> <nu-btn to="/reference/styles/after" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [after]
+            </nu-btn><nu-btn to="/reference/styles/area" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [area]
+            </nu-btn><nu-btn to="/reference/styles/areas" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [areas]
+            </nu-btn><!----><nu-btn to="/reference/styles/backdrop-filter" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [backdrop-filter]
+            </nu-btn><nu-btn to="/reference/styles/basis" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [basis]
+            </nu-btn><nu-btn to="/reference/styles/before" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [before]
+            </nu-btn><nu-btn to="/reference/styles/border" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [border]
+            </nu-btn><nu-btn to="/reference/styles/box" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [box]
+            </nu-btn><nu-btn to="/reference/styles/clip" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [clip]
+            </nu-btn><nu-btn to="/reference/styles/color" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [color]
+            </nu-btn><nu-btn to="/reference/styles/column" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [column]
+            </nu-btn><nu-btn to="/reference/styles/columns" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [columns]
+            </nu-btn><nu-btn to="/reference/styles/contain" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [contain]
+            </nu-btn><nu-btn to="/reference/styles/content" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [content]
+            </nu-btn><nu-btn to="/reference/styles/cursor" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [cursor]
+            </nu-btn><nu-btn to="/reference/styles/display" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [display]
+            </nu-btn><!----><nu-btn to="/reference/styles/expand" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [expand]
+            </nu-btn><!----><nu-btn to="/reference/styles/fill" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [fill]
+            </nu-btn><nu-btn to="/reference/styles/filter" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [filter]
+            </nu-btn><nu-btn to="/reference/styles/flex" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [flex]
+            </nu-btn><nu-btn to="/reference/styles/flow" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [flow]
+            </nu-btn><nu-btn to="/reference/styles/font" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [font]
+            </nu-btn><nu-btn to="/reference/styles/gap" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [gap]
+            </nu-btn><nu-btn to="/reference/styles/group-radius" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [group-radius]
+            </nu-btn><nu-btn to="/reference/styles/grow" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [grow]
+            </nu-btn><nu-btn to="/reference/styles/height" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [height]
+            </nu-btn><nu-btn to="/reference/styles/hide" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [hide]
+            </nu-btn><nu-btn to="/reference/styles/image" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [image]
+            </nu-btn><nu-btn to="/reference/styles/inset" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [inset]
+            </nu-btn><nu-btn to="/reference/styles/interactive" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [interactive]
+            </nu-btn><nu-btn to="/reference/styles/items" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [items]
+            </nu-btn><nu-btn to="/reference/styles/line-clamp" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [line-clamp]
+            </nu-btn><nu-btn to="/reference/styles/mark" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [mark]
+            </nu-btn><nu-btn to="/reference/styles/move" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [move]
+            </nu-btn><nu-btn to="/reference/styles/opacity" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [opacity]
+            </nu-btn><nu-btn to="/reference/styles/order" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [order]
+            </nu-btn><nu-btn to="/reference/styles/orient" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [orient]
+            </nu-btn><nu-btn to="/reference/styles/origin" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [origin]
+            </nu-btn><nu-btn to="/reference/styles/outline" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [outline]
+            </nu-btn><nu-btn to="/reference/styles/overflow" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [overflow]
+            </nu-btn><nu-btn to="/reference/styles/padding" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [padding]
+            </nu-btn><nu-btn to="/reference/styles/place" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [place]
+            </nu-btn><!----><!----><nu-btn to="/reference/styles/radius" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [radius]
+            </nu-btn><nu-btn to="/reference/styles/rotate" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [rotate]
+            </nu-btn><nu-btn to="/reference/styles/row" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [row]
+            </nu-btn><nu-btn to="/reference/styles/rows" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [rows]
+            </nu-btn><nu-btn to="/reference/styles/scale" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [scale]
+            </nu-btn><nu-btn to="/reference/styles/scrollbar" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [scrollbar]
+            </nu-btn><nu-btn to="/reference/styles/selectable" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [selectable]
+            </nu-btn><nu-btn to="/reference/styles/shadow" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [shadow]
+            </nu-btn><nu-btn to="/reference/styles/show" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [show]
+            </nu-btn><nu-btn to="/reference/styles/shrink" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [shrink]
+            </nu-btn><nu-btn to="/reference/styles/size" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [size]
+            </nu-btn><nu-btn to="/reference/styles/sizing" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [sizing]
+            </nu-btn><nu-btn to="/reference/styles/snap" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [snap]
+            </nu-btn><nu-btn to="/reference/styles/snapping" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [snapping]
+            </nu-btn><nu-btn to="/reference/styles/space" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [space]
+            </nu-btn><nu-btn to="/reference/styles/t" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [t]
+            </nu-btn><nu-btn to="/reference/styles/text" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [text]
+            </nu-btn><nu-btn to="/reference/styles/theme" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [theme]
+            </nu-btn><nu-btn to="/reference/styles/toggle" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [toggle]
+            </nu-btn><nu-btn to="/reference/styles/transform" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [transform]
+            </nu-btn><nu-btn to="/reference/styles/transition" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [transition]
+            </nu-btn><nu-btn to="/reference/styles/width" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [width]
+            </nu-btn><nu-btn to="/reference/styles/z" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [z]
+            </nu-btn><nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Utility attributes
+          </nu-h2> <nu-btn to="/reference/utilities/control" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [control]
+            </nu-btn><nu-btn to="/reference/utilities/disabled" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [disabled]
+            </nu-btn><nu-btn to="/reference/utilities/effect" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [effect]
+            </nu-btn><nu-btn to="/reference/utilities/hidden" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [hidden]
+            </nu-btn><nu-btn to="/reference/utilities/id" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [id]
+            </nu-btn><nu-btn to="/reference/utilities/responsive" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [responsive]
+            </nu-btn><nu-btn to="/reference/utilities/special" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [special]
+            </nu-btn><nu-btn to="/reference/utilities/trigger" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [trigger]
+            </nu-btn><nu-btn to="/reference/utilities/as" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              [as]
+            </nu-btn><nu-h2 size="sm" text="up b" color="#text.60" padding="2x 0 0 1x">
+            Functions
+          </nu-h2> <nu-btn to="/reference/functions/hue" padding=".5x 1x" color="text :current.hover.focus[special]" fill="#clear" mark="no :current[y]" inset="no" border="0" content="start" opacity="1">
+              hue()
+            </nu-btn></nu-nav></nu-block> <nu-grid gap="1gp" columns="1pr --sidebar-width|||1pr" flow="row" content="start stretch"><nu-block padding="4x 0 12x" grow="1" order="1|||2"><nu-article gap="" size="lg||||md"><nu-attrs for="table" size="md"></nu-attrs> <nu-attrs for="gridtable" size="md"></nu-attrs> <nu-flow gap=""><nu-pane content="space-between" flow="row||||column-reverse" items="start"><nu-h1 size="h1||||h2">
+                  control
+                </nu-h1> <nu-btn clear="" border="#special.50" size="md|||sm" padding=".5x 1x" to="!https://github.com/numldesign/numl/blob/master/src/behaviors/control.js"><nu-icon name="^btn github-outline :hover.focus[external-link-outline]"></nu-icon>
+                  Source Code
+                </nu-btn></nu-pane> <nu-badge special="">
+                behavior
+              </nu-badge> <!----> <nu-spacer></nu-spacer> <nu-block><nu-block role="paragraph">Description and usage examples of “control” behavior.</nu-block>
+</nu-block> <nu-spacer></nu-spacer></nu-flow> <nu-block display="flex" flow="column" items="stretch" show="n|||y" space="1x left"><nu-h2 size="sm" text="up b" color="#text.60" padding="0 0 2x 1x">
+    Table of contents
+  </nu-h2> <nu-btn to="#related-elements" padding=".5x 1x" border="0 left outside #clear :current[1ow left outside #special]" color="text :current[special]" move="--offset :hover.current[(1ow + --offset) 0]" mark="no" inset="no" radius="no" content="start" transition="all" fill="#clear" z="above" size="md" opacity="1 :current[1]"><nu-props offset="0 * 1x"></nu-props> <nu-el text="ellipsis">Related elements</nu-el></nu-btn> <nu-block show="y|||n"><nu-spacer size="4x"></nu-spacer> <nu-block padding="0 1x" size="sm">
+      Help us to improve this page by
+      <nu-link to="!https://github.com/numldesign/website/edit/main/content/reference/behaviors/control.md">
+        sending a pull request
+      </nu-link></nu-block></nu-block> <nu-spacer show="n|||y" size="2x"></nu-spacer> <nu-line show="n|||y"></nu-line> <nu-spacer show="n|||y" size="2x"></nu-spacer></nu-block> <nu-block><div class="nuxt-content"><nu-block role="paragraph">This behavior has not yet been described in detail, but you can see examples of use in our <nu-link role="link" to="/storybook">Storybook</nu-link>.</nu-block>
+<nu-h2 space="8x top" padding="!(8x + 1em) top" role="heading" aria-level="2" id="related-elements">Related elements</nu-h2>
+<nu-block role="paragraph">This behavior is used by default in the following elements:</nu-block>
+<nu-list role="list">
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-radiogroup">nu-radiogroup</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-tablist">nu-tablist</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-link">nu-link</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-blocklink">nu-blocklink</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-action">nu-action</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-tab">nu-tab</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-btn">nu-btn</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-cardbtn">nu-cardbtn</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-itembtn">nu-itembtn</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-menuitem">nu-menuitem</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-switch">nu-switch</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-checkbox">nu-checkbox</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-radio">nu-radio</nu-link></nu-listitem>
+<nu-listitem role="listitem"><nu-link role="link" to="/reference/elements/nu-dateinput">nu-dateinput</nu-link></nu-listitem>
+</nu-list>
+</div></nu-block> <nu-spacer size="6x"></nu-spacer> <nu-block><nu-grid columns="1pr 1pr|||||1pr" flow="row wrap" gap="2x|||||1x"><nu-attrs for="icon" size="5x"></nu-attrs> <!----> <!----></nu-grid></nu-block></nu-article></nu-block> <nu-block order="2|||1" show="y|||n"><nu-block display="flex" flow="column" items="stretch" gap="0" place="sticky top --topbar-offset" overflow="hidden auto" height="max (100vh - --topbar-offset)" padding="3x 0|||4x 0 0" move="-1x 0"><nu-block display="flex" flow="column" items="stretch"><nu-h2 size="sm" text="up b" color="#text.60" padding="0 0 2x 1x">
+    Table of contents
+  </nu-h2> <nu-btn to="#related-elements" padding=".5x 1x" border="0 left outside #clear :current[1ow left outside #special]" color="text :current[special]" move="--offset :hover.current[(1ow + --offset) 0]" mark="no" inset="no" radius="no" content="start" transition="all" fill="#clear" z="above" use-current="true" size="md" opacity="1 :current[1]"><nu-props offset="0 * 1x"></nu-props> <nu-el text="ellipsis">Related elements</nu-el></nu-btn> <nu-block show="y|||n"><nu-spacer size="4x"></nu-spacer> <nu-block padding="0 1x" size="sm">
+      Help us to improve this page by
+      <nu-link to="!https://github.com/numldesign/website/edit/main/content/reference/behaviors/control.md">
+        sending a pull request
+      </nu-link></nu-block></nu-block> <nu-spacer show="n|||y" size="2x"></nu-spacer> <nu-line show="n|||y"></nu-line> <nu-spacer show="n|||y" size="2x"></nu-spacer></nu-block></nu-block></nu-block></nu-grid></nu-grid> <nu-block border="top" padding="2x 0"><nu-block space="around" width="--content-width"><nu-pane content="space-between" box="y"><nu-pane><nu-btn padding="1x 2x 1x 1.5x|||1x" label="Scheme" radius="round"><nu-icon name="^root :light[sun-outline] :dark[moon-outline]"></nu-icon> <nu-el show="y|||n">
+      Auto
+    </nu-el> <nu-block text="nowrap b" show="n|||y" size="xs" place="outside-bottom -1px">
+      Auto
+    </nu-block></nu-btn> <nu-btn padding="1x 2x 1x 1.5x|||1x" label="Contrast Mode" radius="round"><nu-icon name="contrast" rotate="^root :high-contrast[180deg]" transition="rotate"></nu-icon> <nu-el show="y|||n">
+      Auto
+    </nu-el> <nu-block text="nowrap b" show="n|||y" size="xs" place="outside-bottom -1px">
+      Auto
+    </nu-block></nu-btn></nu-pane> <nu-btn clear="" to="#root"><nu-svg src="/images/nude-logo-small.svg" height="4x" width="min 4x" color="text-soft" opacity="^btn 1 :hover.focus[0]" transition="opacity"></nu-svg> <nu-icon name="chevron-up" place="inside" size="6x" opacity="^btn 0 :hover.focus[1]" transition="opacity"></nu-icon></nu-btn> <nu-el text="right">Deployed on
+          <nu-action to="!https://www.netlify.com/?utm_source=numl.design&utm_medium=doc&utm_campaign=numl" text=":hover[u]" color="special" mark="no">
+            Netlify
+          </nu-action></nu-el></nu-pane></nu-block></nu-block> <!----></nu-flow> <nu-region label="Settings" display="flex" flow="column" items="stretch" gap="1x" place="fixed top right @topbar-offset 0" overflow="hidden auto" height="100vh - @topbar-offset" width="initial 40x 100vw" radius="0" shadow="" fill="#second-bg" padding="2x 3x" z="front" move=":hidden[100% 0]" transition="move, opacity" interactive="yes :hidden[no]" hidden><nu-flow gap=""><nu-h2 size="h5">Global settings</nu-h2> <nu-flow padding="1x 0" gap=""><nu-attrs for="btn" padding=".5x 1x"></nu-attrs> <nu-flow gap=""><nu-pane content="space-between"><nu-label>Accent Hue</nu-label> <nu-el>290</nu-el></nu-pane> <nu-slider min="0" max="359" image="linear(to right, hue(0 s), hue(90 s), hue(180 s), hue(270 s), hue(0 s))" value="290"></nu-slider></nu-flow> <nu-flow gap=""><nu-pane content="space-between"><nu-label>Base Hue</nu-label> <nu-el>240</nu-el></nu-pane> <nu-slider min="0" max="359" image="linear(to right, hue(0 s), hue(90 s), hue(180 s), hue(270 s), hue(0 s))" value="240"></nu-slider></nu-flow> <nu-flow gap=""><nu-pane content="space-between"><nu-label>Saturation</nu-label> <nu-el>75</nu-el></nu-pane> <nu-slider value="75" min="0" max="100" image="linear(to right, hue(290 0 s), hue(290 100 s))"></nu-slider></nu-flow> <nu-flow gap=""><nu-pane><nu-label>Pastel</nu-label> <nu-checkbox></nu-checkbox></nu-pane></nu-flow> <nu-flow gap=""><nu-label>Scheme</nu-label> <nu-btngroup use-radiogroup="" value="auto"><nu-btn value="auto">Auto</nu-btn> <nu-btn value="light">Light</nu-btn> <nu-btn value="dark">Dark</nu-btn></nu-btngroup></nu-flow> <nu-flow gap=""><nu-label>Contrast</nu-label> <nu-btngroup use-radiogroup="" value="auto"><nu-btn value="auto">Auto</nu-btn> <nu-btn value="no-preference">Normal</nu-btn> <nu-btn value="more">More</nu-btn></nu-btngroup></nu-flow></nu-flow> <nu-btn special="" disabled>
+    Reset
+  </nu-btn></nu-flow></nu-region></nu-root></div></div><script defer src="/_nuxt/static/1711978526/reference/behaviors/control/state.js"></script><script src="/_nuxt/2d0c8cb.js" defer></script><script src="/_nuxt/893ade6.js" defer></script><script src="/_nuxt/d3b510d.js" defer></script><script src="/_nuxt/a65c8b7.js" defer></script><script src="/_nuxt/cebb070.js" defer></script><script src="/_nuxt/faaf8e3.js" defer></script><script data-n-head="ssr" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" type="text/javascript" data-body="true"></script>
+  </body>
+</html>
