@@ -5,6 +5,7 @@ import { SECTION_MAP } from './helpers/config';
 const DEV = process.env.NODE_ENV !== 'production';
 
 export default {
+  base: '/numl/',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -38,8 +39,7 @@ export default {
         type: 'module',
       },
       {
-        src:
-          'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js',
+        src: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js',
         type: 'text/javascript',
         body: true,
       },
@@ -86,8 +86,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Mono&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto+Mono&display=swap',
       },
       {
         rel: 'stylesheet',
