@@ -384,7 +384,7 @@
       </nu-card>
     </nu-block>
 
-    <nu-btn special to="!https://theme.numl.design">
+    <nu-btn special to="!https://theme.tenphi.me">
       Try our Theme Generator
       <nu-icon name="external-link" />
     </nu-btn>
